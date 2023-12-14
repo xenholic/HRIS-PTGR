@@ -17,6 +17,7 @@ onMounted(() => {
   <div>
     <NuxtLayout>
       <NuxtPage/>
+      <Router-view />
     </NuxtLayout>
   </div>
 </template>

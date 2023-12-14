@@ -72,7 +72,7 @@ export const useCounterStore = defineStore({
 
     async Login() {
       try {
-        let custData = await axios.post(`${this.baseUrl}/user`, {
+        let custData = await axios.post(`${this.baseUrl}/users`, {
           email: this.LoginForm.email,
           password: this.LoginForm.password
         })

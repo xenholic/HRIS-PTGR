@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import { useCounterStore } from "../store/index.js";
+import { useCounterStore } from "../stores/index.js";
 import { mapActions, mapState } from "pinia";
 
 export default{

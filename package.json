@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "server": "json-server --watch data/db.json",
     "dev": "nuxt dev --port 3050",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
