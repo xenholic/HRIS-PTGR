@@ -1,0 +1,644 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "superadmin@gmail.com",
+      "name": "SuperAdmin",
+      "passsword": "superadmin",
+      "role": "superadmin"
+    },
+    {
+      "id": 2,
+      "email": "admin@gmail.com",
+      "name": "sarah",
+      "passsword": "admin",
+      "role": "admin"
+    },
+    {
+      "id": 3,
+      "email": "staff@gmail.com",
+      "name": "Yusril",
+      "passsword": "staff",
+      "role": "staff"
+    },
+    {
+      "id": 4,
+      "email": "user@gmail.com",
+      "name": "Rizal",
+      "passsword": "user",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "email": "user1@gmail.com",
+      "name": "andri",
+      "passsword": "user",
+      "role": "user"
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 6
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 7
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 8
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 9
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 10
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 11
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 12
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 13
+    },
+    {
+      "email": "superadmin@gmail.com",
+      "password": "superadmin",
+      "id": 14
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "superadmin",
+      "id": 15
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 16
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 17
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 18
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 19
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 20
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 21
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 22
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 23
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 24
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 25
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 26
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 27
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 28
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 29
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 30
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 31
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 32
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 33
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 34
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 35
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "PT Greenland Resource",
+      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
+      "companyId": 1
+    },
+    {
+      "id": 2,
+      "name": "PT E-Minerba",
+      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
+      "companyId": 2
+    },
+    {
+      "id": 3,
+      "name": "PT Krakatau Steel",
+      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
+      "companyId": 3
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "rizal haris",
+      "address": "cipondoh - tangerang",
+      "email": "rizalhari@yahoo.co.id",
+      "salary": "Rp. 10.000.000",
+      "status": "Active",
+      "profilePic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Gibran_Rakabuming_Raka%2C_Candidate_for_Vice_President_of_Indonesia_2024.jpg/1200px-Gibran_Rakabuming_Raka%2C_Candidate_for_Vice_President_of_Indonesia_2024.jpg",
+      "positionId": 1,
+      "companyId": 1,
+      "departmentId": 1,
+      "fieldId": 2,
+      "religion": 1,
+      "personalData": {
+        "dateOfBirth": "1990-01-01",
+        "placeOfBirth": "Tangerang",
+        "gender": 1,
+        "educationData": {
+          "education": 3,
+          "yearsOfEducation": "2007-2010",
+          "major": "Tehnik Sipil",
+          "organizationExp": "HEAD of BUMN"
+        },
+        "familyData": {
+          "motherName": "tukimin",
+          "fatherName": "yanto",
+          "wifeName": "Lisa",
+          "mariageStatus": 1,
+          "dependentsChild": {
+            "childCount": 2,
+            "boyName": "Arya",
+            "girlName": "Nina"
+          }
+        },
+        "phoneNumber": "+6289707979797",
+        "nikNumber": 12312121231,
+        "bpjsTkNumber": 12345566454535344,
+        "bpjsKesNumber": 12345678901234568,
+        "npwp": 12334455,
+        "experience": "PT Semen Padang",
+        "lastDepartment": "Junior Geologist",
+        "personalCharacter": {
+          "weakness": "sangat ini itu",
+          "advantage": "Si paling ini itu"
+        },
+        "emergencyContact": {
+          "name": "Irma",
+          "relation": "Wife",
+          "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
+          "phoneNumber": "+4892184219378"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Haris",
+      "address": "cipondoh - tangerang",
+      "email": "rizalhari@yahoo.co.id",
+      "salary": "Rp. 10.000.000",
+      "status": "Active",
+      "profilePic": "https://upload.wikimedia.org/wikipedia/commons/8/80/Kaesang_Madhang.jpg",
+      "positionId": 1,
+      "companyId": 1,
+      "departmentId": 1,
+      "fieldId": 2,
+      "religion": 1,
+      "personalData": {
+        "dateOfBirth": "1990-01-01",
+        "placeOfBirth": "Tangerang",
+        "gender": 1,
+        "educationData": {
+          "education": 3,
+          "yearsOfEducation": "2007-2010",
+          "major": "Tehnik Sipil",
+          "organizationExp": "HEAD of BUMN"
+        },
+        "familyData": {
+          "motherName": "tukimin",
+          "fatherName": "yanto",
+          "wifeName": "Lisa",
+          "mariageStatus": 1,
+          "dependentsChild": {
+            "childCount": 2,
+            "boyName": "Arya",
+            "girlName": "Nina"
+          }
+        },
+        "phoneNumber": "+6289707979797",
+        "nikNumber": 12312121231,
+        "bpjsTkNumber": 12345566454535344,
+        "bpjsKesNumber": 12345678901234568,
+        "npwp": 12334455,
+        "experience": "PT Semen Padang",
+        "lastDepartment": "Junior Geologist",
+        "personalCharacter": {
+          "weakness": "sangat ini itu",
+          "advantage": "Si paling ini itu"
+        },
+        "emergencyContact": {
+          "name": "Irma",
+          "relation": "Wife",
+          "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
+          "phoneNumber": "+4892184219378"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "rizal",
+      "address": "cipondoh - tangerang",
+      "email": "rizalhari@yahoo.co.id",
+      "salary": "Rp. 10.000.000",
+      "status": "Active",
+      "profilePic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Prabowo_Subianto%2C_Candidate_for_Indonesia%27s_President_in_2024.jpg/1200px-Prabowo_Subianto%2C_Candidate_for_Indonesia%27s_President_in_2024.jpg",
+      "positionId": 1,
+      "companyId": 1,
+      "departmentId": 1,
+      "fieldId": 2,
+      "religion": 1,
+      "personalData": {
+        "dateOfBirth": "1990-01-01",
+        "placeOfBirth": "Tangerang",
+        "gender": 1,
+        "educationData": {
+          "education": 3,
+          "yearsOfEducation": "2007-2010",
+          "major": "Tehnik Sipil",
+          "organizationExp": "HEAD of BUMN"
+        },
+        "familyData": {
+          "motherName": "tukimin",
+          "fatherName": "yanto",
+          "wifeName": "Lisa",
+          "mariageStatus": 1,
+          "dependentsChild": {
+            "childCount": 2,
+            "boyName": "Arya",
+            "girlName": "Nina"
+          }
+        },
+        "phoneNumber": "+6289707979797",
+        "nikNumber": 12312121231,
+        "bpjsTkNumber": 12345566454535344,
+        "bpjsKesNumber": 12345678901234568,
+        "npwp": 12334455,
+        "experience": "PT Semen Padang",
+        "lastDepartment": "Junior Geologist",
+        "personalCharacter": {
+          "weakness": "sangat ini itu",
+          "advantage": "Si paling ini itu"
+        },
+        "emergencyContact": {
+          "name": "Irma",
+          "relation": "Wife",
+          "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
+          "phoneNumber": "+4892184219378"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Yusril",
+      "address": "cipondoh - tangerang",
+      "email": "rizalhari@yahoo.co.id",
+      "salary": "Rp. 10.000.000",
+      "status": "Active",
+      "profilePic": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.presidenri.go.id%2Fpresiden-joko-widodo%2F&psig=AOvVaw2N-OsV_4txNQJ6nWYRwKgS&ust=1702453018722000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIiXuu-xiYMDFQAAAAAdAAAAABAD",
+      "positionId": 1,
+      "companyId": 1,
+      "departmentId": 1,
+      "fieldId": 2,
+      "religion": 1,
+      "personalData": {
+        "dateOfBirth": "1990-01-01",
+        "placeOfBirth": "Tangerang",
+        "gender": 1,
+        "educationData": {
+          "education": 3,
+          "yearsOfEducation": "2007-2010",
+          "major": "Tehnik Sipil",
+          "organizationExp": "HEAD of BUMN"
+        },
+        "familyData": {
+          "motherName": "tukimin",
+          "fatherName": "yanto",
+          "wifeName": "Lisa",
+          "mariageStatus": 1,
+          "dependentsChild": {
+            "childCount": 2,
+            "boyName": "Arya",
+            "girlName": "Nina"
+          }
+        },
+        "phoneNumber": "+6289707979797",
+        "nikNumber": 12312121231,
+        "bpjsTkNumber": 12345566454535344,
+        "bpjsKesNumber": 12345678901234568,
+        "npwp": 12334455,
+        "experience": "PT Semen Padang",
+        "lastDepartment": "Junior Geologist",
+        "personalCharacter": {
+          "weakness": "sangat ini itu",
+          "advantage": "Si paling ini itu"
+        },
+        "emergencyContact": {
+          "name": "Irma",
+          "relation": "Wife",
+          "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
+          "phoneNumber": "+4892184219378"
+        }
+      }
+    }
+  ],
+  "Department": [
+    {
+      "id": 1,
+      "departmentId": 1,
+      "departmentName": "HRD"
+    },
+    {
+      "id": 2,
+      "departmentId": 2,
+      "departmentName": "Manager"
+    },
+    {
+      "id": 3,
+      "departmentId": 3,
+      "departmentName": "IT"
+    },
+    {
+      "id": 4,
+      "departmentId": 4,
+      "departmentName": "Staff"
+    },
+    {
+      "id": 5,
+      "departmentId": 5,
+      "departmentName": "Engginering"
+    },
+    {
+      "id": 6,
+      "departmentId": 6,
+      "departmentName": "Drilling"
+    },
+    {
+      "id": 7,
+      "departmentId": 7,
+      "departmentName": "HSE"
+    },
+    {
+      "id": 8,
+      "departmentId": 8,
+      "departmentName": "Admin/Logistik"
+    }
+  ],
+  "fields": [
+    {
+      "id": 1,
+      "fieldName": "On Site Field",
+      "fieldId": 1
+    },
+    {
+      "id": 2,
+      "fieldName": "Work from Office",
+      "fieldId": 2
+    },
+    {
+      "id": 3,
+      "fieldName": "Work from Home",
+      "fieldId": 3
+    }
+  ],
+  "workingStatus": [
+    {
+      "id": 1,
+      "statusName": "PKWTT",
+      "workingStatusId": 1
+    },
+    {
+      "id": 2,
+      "statusName": "PKWT",
+      "workingStatusId": 2
+    },
+    {
+      "id": 3,
+      "statusName": "THL",
+      "workingStatusId": 3
+    },
+    {
+      "id": 4,
+      "statusName": "Karyawan Tetap",
+      "workingStatusId": 4
+    }
+  ],
+  "pointOfHireArea": [
+    {
+      "id": 1,
+      "areaName": "Tenaga Kerja Lokal",
+      "pointOfHireAreaId": 1
+    },
+    {
+      "id": 2,
+      "areaName": "Tenaga Kerja Regional",
+      "pointOfHireAreaId": 2
+    },
+    {
+      "id": 3,
+      "areaName": "Tenaga Kerja Nasional",
+      "pointOfHireAreaId": 3
+    }
+  ],
+  "religions": [
+    {
+      "id": 1,
+      "name": "Islam",
+      "religionId": 1
+    },
+    {
+      "id": 2,
+      "name": "Kristen Protestan",
+      "religionId": 2
+    },
+    {
+      "id": 3,
+      "name": "Kristen Katolik",
+      "religionId": 3
+    },
+    {
+      "id": 4,
+      "name": "Budha",
+      "religionId": 4
+    },
+    {
+      "id": 5,
+      "name": "Hindu",
+      "religionId": 5
+    },
+    {
+      "id": 6,
+      "name": "Atheis",
+      "religionId": 6
+    }
+  ],
+  "gender": [
+    {
+      "id": 1,
+      "genderName": "Male",
+      "genderId": 1
+    },
+    {
+      "id": 2,
+      "genderName": "Female",
+      "genderId": 2
+    }
+  ],
+  "mariageStatus": [
+    {
+      "id": 1,
+      "status": "Single",
+      "mariageStatusId": 1
+    },
+    {
+      "id": 2,
+      "status": "Menikah",
+      "mariageStatusId": 2
+    },
+    {
+      "id": 3,
+      "status": "Cerai",
+      "mariageStatusId": 3
+    },
+    {
+      "id": 4,
+      "status": "Janda",
+      "mariageStatusId": 4
+    },
+    {
+      "id": 5,
+      "status": "Duda",
+      "mariageStatusId": 5
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "level": "Sarjana (S3)",
+      "educationId": 1
+    },
+    {
+      "id": 1,
+      "level": "Sarjana (S2)",
+      "educationId": 1
+    },
+    {
+      "id": 1,
+      "level": "Sarjana (S1)",
+      "educationId": 1
+    },
+    {
+      "id": 1,
+      "level": "D1/D2/D3",
+      "educationId": 1
+    },
+    {
+      "id": 1,
+      "level": "SMA/SMK",
+      "educationId": 1
+    },
+    {
+      "id": 1,
+      "level": "SMP",
+      "educationId": 1
+    },
+    {
+      "id": 1,
+      "level": "SD",
+      "educationId": 1
+    }
+  ],
+  "totalData": [
+    {
+      "id":1,
+      "ammountEmployees": 156
+    },
+    {
+      "ammountCompanies": 5
+    },
+    {
+      "leavesAmmount": 10
+    },
+    {
+      "ammountSalary": "Rp. 100.000 B"
+    }
+  ]
+}
