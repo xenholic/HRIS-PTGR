@@ -35,11 +35,11 @@
           </div>
           <div class="col-xl-6 col-sm-12 col-12">
             <div class="row">
-              <!-- <div class="col-xl-6 col-sm-6 col-12">
-                <a class="btn-emp" href="#"> Admin Dashboard</a>
-              </div> -->
+              <div class="bg-color-white col-xl-6 col-sm-6 col-12">
+                <a class="btn-emp text-white" href="#"> </a>
+              </div>
               <div class="col-xl-6 col-sm-6 col-12">
-                <a class="btn-dash" href="/"
+                <a class="btn-dash " href="/"
                   >Admin Dashboard</a
                 >
               </div>
@@ -52,7 +52,7 @@
               <div class="card-body">
                 <div class="card_widget_header">
                   <label>Employees</label>
-                  <h4> {{ this.getTotalEmployees }} </h4>
+                  <h4> {{ totalEmployees }} </h4>
                 </div>
                 <div class="card_widget_img">
                   <img src="assets/img/dash1.png" alt="card-img" />
@@ -65,7 +65,7 @@
               <div class="card-body">
                 <div class="card_widget_header">
                   <label>Companies</label>
-                  <h4>30</h4>
+                  <h4>{{ totalCompanies }}</h4>
                 </div>
                 <div class="card_widget_img">
                   <img src="assets/img/dash2.png" alt="card-img" />
@@ -78,7 +78,7 @@
               <div class="card-body">
                 <div class="card_widget_header">
                   <label>Leaves</label>
-                  <h4>9</h4>
+                  <h4>{{ totalLeaves }}</h4>
                 </div>
                 <div class="card_widget_img">
                   <img src="assets/img/dash3.png" alt="card-img" />
@@ -87,14 +87,21 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 col-12">
-            <div class="card board1 fill4">
+            <div class="card board1 fill4 ">
               <div class="card-body">
                 <div class="card_widget_header">
-                  <label>Salary</label>
-                  <h4>$5.8M</h4>
+                  <label>Employee in Office</label>
+                  <h4>{{ totalEmployees }}</h4>
                 </div>
                 <div class="card_widget_img">
-                  <img src="assets/img/dash4.png" alt="card-img" />
+                  <img src="assets/img/dash1.png" alt="card-img" />
+                </div>
+                <div class="card_widget_header">
+                  <label>Employee in Field</label>
+                  <h4>{{ totalEmployees }}</h4>
+                </div>
+                <div class="card_widget_img">
+                  <img src="assets/img/dash1.png" alt="card-img" />
                 </div>
               </div>
             </div>
@@ -170,17 +177,17 @@
                       />
                     </div>
                     <div class="team-content">
-                      <label>Maria Cotton</label>
-                      <span>PHP</span>
+                      <label>Hariz Rizal</label>
+                      <span>PJO</span>
                     </div>
                   </div>
                   <div class="team-action">
                     <ul>
                       <li>
-                        <a><i data-feather="trash-2"></i></a>
+                        <a>Gaji</a>
                       </li>
                       <li>
-                        <a><i data-feather="edit-2"></i></a>
+                        <a>Gaji</a>
                       </li>
                     </ul>
                   </div>
@@ -450,8 +457,9 @@
 <script>
 import Sidebar from "../components/sidebar.vue";
 import Topbar from "../components/topbar.vue";
-import { useCounterStore } from "../stores/index"
-import { mapState, mapActions } from "vuex";
+import { useStore } from "../stores/index"
+import { mapState, mapActions } from "pinia";
+
 
 export default {
   name: "Dasboard",
@@ -460,17 +468,29 @@ export default {
     Topbar
   },
   computed: {
-    ...mapState(useCounterStore, ["totalEmployees"]),
+    ...mapState(useStore, [
+      "employeesData",
+      "totalEmployees",
+      "companiesData",
+      "totalCompanies",
+      "leavesData",
+      "totalLeaves"
+    ]),
   },
   methods: {
-    ...mapActions(useCounterStore, [
-      "totalEmployees",
+    ...mapActions(useStore, [
+      "getEmployees",
+      "getCompanies",
+      "getLeaves"
     ]),
   },
   created() {
-    this.getTotalEmployees
+    this.getEmployees();
+    this.getCompanies();
+    this.getLeaves();
   },
 };
+
 </script>
 
 

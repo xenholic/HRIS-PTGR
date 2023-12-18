@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.10.1",
     "autoprefixer": "^10.4.16",
     "nuxt": "^3.8.2",
     "postcss": "^8.4.32",
@@ -32,8 +33,6 @@
     "flowbite": "^2.2.0",
     "pinia": "^2.1.7",
     "sweetalert2": "^11.10.1",
-    "vue-apexcharts": "^1.6.2",
-    "vue-chartjs": "^5.2.0",
     "vuex": "^4.0.2"
   }
 }
