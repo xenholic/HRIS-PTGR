@@ -38,13 +38,13 @@
 
         <!-- Dropdown menu  -->
         <div id="dropdownNotification"
-          class="z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-800 dark:divide-gray-700"
+          class="z-10 hidden w-full max-w-sm bg-white divide-x-2 divide-gray-100 rounded-lg shadow dark:bg-gray-800 dark:divide-gray-700"
           aria-labelledby="dropdownNotificationButton">
           <div
             class="block px-4 py-2 font-medium text-center text-gray-700 rounded-t-lg bg-gray-50 dark:bg-gray-800 dark:text-white">
             Notifications
           </div>
-          <div class="divide-y divide-gray-100 dark:divide-gray-700">
+          <div class="divide-x-2 divide-gray-100 dark:divide-gray-700">
             <a href="#" class="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
               <div class="flex-shrink-0">
                 <img class="rounded-full w-11 h-11" src="../assets/img/avatar.png" alt="Jese image" />

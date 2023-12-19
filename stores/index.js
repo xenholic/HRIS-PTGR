@@ -17,6 +17,49 @@ export const useStore = defineStore({
     //   phoneNumber: "",
     //   address: ""
     // },
+    formEmployee : {
+      firstName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      brithPlace: "",
+      dateOfBirth: "",
+      nikNumber: "",
+      gender: "",
+      mariageStatus: 0,
+      company: 0,
+      department: 0,
+      pohArea: 0,
+      position: 0,
+      fieldOfWorking: 0,
+      bpjsKesNumber: "",
+      bpjsTKesNumber: "",
+      address: "",
+      profilePic: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Prabowo_Subianto%2C_Candidate_for_Indonesia%27s_President_in_2024.jpg/1200px-Prabowo_Subianto%2C_Candidate_for_Indonesia%27s_President_in_2024.jpg",
+      education: 0,
+      contractType: 0,
+      educationInstitution: "",
+      major: "",
+      sertification: "",
+      educationYear: "",
+      lastPosition: "",
+      experience: "",
+      personalWeakness: "",
+      personalPower: "",
+      fatherName: "",
+      motherName: "",
+      husbandOrWife: "",
+      childName1: "",
+      childName2: "",
+      childName3: "",
+      childName4: "",
+      emergencyContactName: "",
+      emergencyPhoneNumber: "",
+      relationship: "",
+      emergencyContactAddress: "",
+      salary: 0,
+      startDate: ""
+    },
     baseUrl: "http://localhost:3000",
     employeesData: [],
     companiesData: [],
@@ -32,6 +75,8 @@ export const useStore = defineStore({
     genderData: [],
     educationData: [],
     positionData: [],
+    contractData: [],
+    mariageStatusData: [],
     isActive: true,
   }),
   getters: {
@@ -114,9 +159,132 @@ export const useStore = defineStore({
         let response = await axios.get(`${this.baseUrl}/employees`);
 
         this.employeesData = response.data;
+        // console.log(this.employeesData,"cek data")
         this.totalEmployees = this.employeesData.length;
       } catch (err) {
-        console.log(err, "ini err");
+        console.log(err, "ini err getEmployee");
+      }
+    },
+
+    async addEmployee() {
+      try {
+        // let dataEmployee= {
+        //   name: `${this.formEmployee.firstName} ${this.formEmployee.lastName}`,
+        //   address: this.formEmployee.address,
+        //   email: this.formEmployee.email,
+        //   salary: this.formEmployee.salary,
+        //   status: this.formEmployee.contractType,
+        //   profilePic: this.formEmployee.profilePic,
+        //   positionId: this.formEmployee.position,
+        //   companyId: this.formEmployee.company,
+        //   departmentId: this.formEmployee.department,
+        //   fieldId: this.formEmployee.fieldOfWorking,
+        //   religion: this.formEmployee.religion,
+        //   startDateWorking: this.formEmployee.startDate,
+        //   personalData: {
+        //     dateOfBirth: this.formEmployee.dateOfBirth,
+        //     placeOfBirth: this.formEmployee.brithPlace,
+        //     gender: this.formEmployee.gender,
+        //     educationData: {
+        //       educationLevel: this.formEmployee.education,
+        //       yearsOfEducation: this.formEmployee.educationYear,
+        //       major: this.formEmployee.major,
+        //       organizationExp: this.formEmployee.experience
+        //     },
+        //     familyData: {
+        //       motherName: this.formEmployee.motherName,
+        //       fatherName: this.formEmployee.fatherName,
+        //       wifeName: this.formEmployee.husbandOrWife,
+        //       mariageStatus: this.formEmployee.mariageStatus,
+        //       dependentsChild: {
+        //         childName1: this.formEmployee.childName1,
+        //         childName2: this.formEmployee.childName2,
+        //         childName3: this.formEmployee.childName3,
+        //         childName4: this.formEmployee.childName4
+        //       }
+        //     },
+        //     phoneNumber: this.formEmployee.phoneNumber,
+        //     nikNumber: this.formEmployee.nikNumber,
+        //     bpjsTkNumber: this.formEmployee.bpjsTKesNumber,
+        //     bpjsKesNumber: this.formEmployee.bpjsKesNumber,
+        //     npwp: this.formEmployee.nikNumber,
+        //     experience: this.formEmployee.experience,
+        //     lastDepartment: this.formEmployee.lastPosition,
+        //     personalCharacter: {
+        //       weakness: this.formEmployee.personalWeakness,
+        //       advantage: this.formEmployee.personalPower
+        //     },
+        //     emergencyContact: {
+        //       name: this.formEmployee.emergencyContactName,
+        //       relation: this.formEmployee.relationship,
+        //       address: this.formEmployee.emergencyContactAddress,
+        //       phoneNumber: this.formEmployee.emergencyContact
+        //     }
+        //   }
+        // }
+
+        await axios.post(`${this.baseUrl}/employees`, {
+          name: `${this.formEmployee.firstName} ${this.formEmployee.lastName}`,
+          address: this.formEmployee.address,
+          email: this.formEmployee.email,
+          salary: this.formEmployee.salary,
+          status: this.formEmployee.contractType,
+          profilePic: this.formEmployee.profilePic,
+          positionId: this.formEmployee.position,
+          companyId: this.formEmployee.company,
+          departmentId: this.formEmployee.department,
+          fieldId: this.formEmployee.fieldOfWorking,
+          religion: this.formEmployee.religion,
+          startDateWorking: this.formEmployee.startDate,
+          personalData: {
+            dateOfBirth: this.formEmployee.dateOfBirth,
+            placeOfBirth: this.formEmployee.brithPlace,
+            gender: this.formEmployee.gender,
+            educationData: {
+              educationLevel: this.formEmployee.education,
+              yearsOfEducation: this.formEmployee.educationYear,
+              major: this.formEmployee.major,
+              organizationExp: this.formEmployee.experience
+            },
+            familyData: {
+              motherName: this.formEmployee.motherName,
+              fatherName: this.formEmployee.fatherName,
+              wifeName: this.formEmployee.husbandOrWife,
+              mariageStatus: this.formEmployee.mariageStatus,
+              dependentsChild: {
+                childName1: this.formEmployee.childName1,
+                childName2: this.formEmployee.childName2,
+                childName3: this.formEmployee.childName3,
+                childName4: this.formEmployee.childName4
+              }
+            },
+            phoneNumber: this.formEmployee.phoneNumber,
+            nikNumber: this.formEmployee.nikNumber,
+            bpjsTkNumber: this.formEmployee.bpjsTKesNumber,
+            bpjsKesNumber: this.formEmployee.bpjsKesNumber,
+            npwp: this.formEmployee.nikNumber,
+            experience: this.formEmployee.experience,
+            lastDepartment: this.formEmployee.lastPosition,
+            personalCharacter: {
+              weakness: this.formEmployee.personalWeakness,
+              advantage: this.formEmployee.personalPower
+            },
+            emergencyContact: {
+              name: this.formEmployee.emergencyContactName,
+              relation: this.formEmployee.relationship,
+              address: this.formEmployee.emergencyContactAddress,
+              phoneNumber: this.formEmployee.emergencyContact
+            }
+          }
+        })
+        console.log('sukses')
+        Swal.fire({
+          icon: "success",
+          title: `Success`,
+          text: `Success Register`,
+      });
+      } catch (err) {
+        console.log(err, 'err')
       }
     },
 
@@ -127,7 +295,7 @@ export const useStore = defineStore({
         this.companiesData = response.data;
         this.totalCompanies = this.companiesData.length;
       } catch (err) {
-        console.log(err, "ini errror dari total employeee");
+        console.log(err, "ini errror dari total getCompanies");
       }
     },
 
@@ -138,35 +306,19 @@ export const useStore = defineStore({
         this.leavesData = response.data;
         this.totalLeaves = this.leavesData.length;
       } catch (err) {
-        console.log(err, "ini error");
+        console.log(err, "ini error getLeavesData");
       }
     },
 
-    // async activeEmployee() {
-    //   try {
+    async getContractStatus() {
+      try {
+        let response = await axios.get(`${this.baseUrl}/workingStatus`);
 
-    //   } catch (err) {
-    //     console.log(err, "ini error dari Active Employee");
-    //   }
-    // },
-
-    // async modalDetail() {
-    //   try {
-    //     //modal setup
-    //     const { open, close } = useModal({
-    //       component: modalTestVue,
-    //       attrs: {
-    //         title: "Hello World!",
-    //         onConfirm() {
-    //           close();
-    //         },
-    //       },
-    //       slots: {
-    //         default: "<p>The content of the modal</p>",
-    //       },
-    //     });
-    //   } catch (err) {}
-    // },
+        this.contractData = response.data;
+      } catch (err) {
+        console.log(err, "ini error get ContractStatus");
+      }
+    },
 
     async getDepartment() {
       try {
@@ -174,7 +326,7 @@ export const useStore = defineStore({
 
         this.departmentData = response.data;
       } catch (err) {
-        console.log(err, "ini error detail");
+        console.log(err, "ini error getDepartment");
       }
     },
 
@@ -184,7 +336,7 @@ export const useStore = defineStore({
 
         this.companiesData = response.data;
       } catch (err) {
-        console.log(err, "ini error detail");
+        console.log(err, "ini error getCompany");
       }
     },
 
@@ -194,7 +346,7 @@ export const useStore = defineStore({
 
         this.fieldData = response.data;
       } catch (err) {
-        console.log(err, "ini error detail");
+        console.log(err, "ini error getFieldArea");
       }
     },
 
@@ -204,7 +356,47 @@ export const useStore = defineStore({
 
         this.positionData = response.data;
       } catch (err) {
-        console.log(err, "ini error detail");
+        console.log(err, "ini error getposition");
+      }
+    },
+
+    async getReligion() {
+      try {
+        let response = await axios.get(`${this.baseUrl}/religions`);
+
+        this.positionData = response.data;
+      } catch (err) {
+        console.log(err, "ini error getreligion");
+      }
+    },
+
+    async getEducation() {
+      try {
+        let response = await axios.get(`${this.baseUrl}/education`);
+
+        this.educationData = response.data;
+      } catch (err) {
+        console.log(err, "ini error getEducation");
+      }
+    },
+
+    async getPOHArea() {
+      try {
+        let response = await axios.get(`${this.baseUrl}/poharea`);
+
+        this.pohAreaData = response.data;
+      } catch (err) {
+        console.log(err, "ini error getPOHArea");
+      }
+    },
+
+    async getMariageStatus() {
+      try {
+        let response = await axios.get(`${this.baseUrl}/mariagestatus`);
+
+        this.mariageStatusData = response.data;
+      } catch (err) {
+        console.log(err, "ini error getMariageStatus");
       }
     },
   },

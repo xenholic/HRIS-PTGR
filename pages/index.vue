@@ -13,7 +13,7 @@
             <img src="../assets/img/avatar.png" class="mr-1" alt="profile" />
             Welcome
           </h4>
-          <label>Senin, 11 Desember 2023</label>
+          <label>{{ myDate }}</label>
         </div>
         <div class="row mb-4">
           <div class="col-xl-6 col-sm-12 col-12">
@@ -463,6 +463,11 @@ import { mapState, mapActions } from "pinia";
 
 export default {
   name: "Dasboard",
+  data() {
+    return {
+      myDate: new Date()
+    };
+  }, 
   components: {
     Sidebar,
     Topbar
@@ -483,6 +488,11 @@ export default {
       "getCompanies",
       "getLeaves"
     ]),
+    currentDate() {
+      const current = new Date();
+      const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+      return date;
+    }
   },
   created() {
     this.getEmployees();
