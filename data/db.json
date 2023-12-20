@@ -40,20 +40,17 @@
     {
       "id": 1,
       "name": "PT Greenland Resource",
-      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
-      "companyId": 1
+      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat"
     },
     {
       "id": 2,
       "name": "PT E-Minerba",
-      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
-      "companyId": 2
+      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat"
     },
     {
       "id": 3,
       "name": "PT Krakatau Steel",
-      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat",
-      "companyId": 3
+      "address": "Menara Batavia Karet-Tengsin Jakarta Pusat"
     }
   ],
   "employees": [
@@ -66,17 +63,19 @@
       "status": "active",
       "profilePic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Gibran_Rakabuming_Raka%2C_Candidate_for_Vice_President_of_Indonesia_2024.jpg/1200px-Gibran_Rakabuming_Raka%2C_Candidate_for_Vice_President_of_Indonesia_2024.jpg",
       "positionId": 1,
+      "sertification": "www.google.com",
       "companyId": 1,
       "departmentId": 1,
       "fieldId": 2,
       "religion": 1,
       "startDateWorking": "01-01-2020",
+      "birthPlace": "Jakarta",
       "personalData": {
         "dateOfBirth": "1990-01-01",
         "placeOfBirth": "Tangerang",
-        "gender": 1,
+        "gender": "male",
         "educationData": {
-          "education": 3,
+          "educationLevel": 3,
           "yearsOfEducation": "2007-2010",
           "major": "Tehnik Sipil",
           "organizationExp": "HEAD of BUMN"
@@ -93,10 +92,10 @@
           }
         },
         "phoneNumber": "+6289707979797",
-        "nikNumber": 12312121231,
-        "bpjsTkNumber": 12345566454535344,
-        "bpjsKesNumber": 12345678901234568,
-        "npwp": 12334455,
+        "nikNumber": "12312121231",
+        "bpjsTkNumber": "12345566454535344",
+        "bpjsKesNumber": "12345678901234568",
+        "npwp": "12334455",
         "experience": "PT Semen Padang",
         "lastDepartment": "Junior Geologist",
         "personalCharacter": {
@@ -128,9 +127,9 @@
       "personalData": {
         "dateOfBirth": "1990-01-01",
         "placeOfBirth": "Tangerang",
-        "gender": 1,
+        "gender": "male",
         "educationData": {
-          "education": 3,
+          "educationLevel": 3,
           "yearsOfEducation": "2007-2010",
           "major": "Tehnik Sipil",
           "organizationExp": "HEAD of BUMN"
@@ -182,9 +181,9 @@
       "personalData": {
         "dateOfBirth": "1990-01-01",
         "placeOfBirth": "Tangerang",
-        "gender": 1,
+        "gender": "male",
         "educationData": {
-          "education": 3,
+          "educationLevel": 3,
           "yearsOfEducation": "2007-2010",
           "major": "Tehnik Sipil",
           "organizationExp": "HEAD of BUMN"
@@ -195,7 +194,6 @@
           "wifeName": "Lisa",
           "mariageStatus": 1,
           "dependentsChild": {
-            "childCount": 2,
             "boyName": "Arya",
             "girlName": "Nina"
           }
@@ -236,9 +234,9 @@
       "personalData": {
         "dateOfBirth": "1990-01-01",
         "placeOfBirth": "Tangerang",
-        "gender": 1,
+        "gender": "male",
         "educationData": {
-          "education": 3,
+          "educationLevel": 3,
           "yearsOfEducation": "2007-2010",
           "major": "Tehnik Sipil",
           "organizationExp": "HEAD of BUMN"
@@ -249,7 +247,6 @@
           "wifeName": "Lisa",
           "mariageStatus": 1,
           "dependentsChild": {
-            "childCount": 2,
             "boyName": "Arya",
             "girlName": "Nina"
           }
@@ -276,126 +273,109 @@
   ],
   "leaves": [
     {
-        "id": 1,
-        "name" : "haris",
-        "leave": 12,
-        "start": "12-12-2023",
-        "finish":"13-12-2023",
-        "reason": "Sakit",
-        "status": 0
+      "id": 1,
+      "name": "haris",
+      "leave": 12,
+      "start": "12-12-2023",
+      "finish": "13-12-2023",
+      "reason": "Sakit",
+      "status": 0
     },
     {
-        "id": 2,
-        "name" : "haris",
-        "leave": 12,
-        "start": "12-12-2023",
-        "finish":"13-12-2023",
-        "reason": "Sakit",
-        "status": 0
+      "id": 2,
+      "name": "haris",
+      "leave": 12,
+      "start": "12-12-2023",
+      "finish": "13-12-2023",
+      "reason": "Sakit",
+      "status": 0
     },
     {
-        "id": 3,
-        "name" : "haris",
-        "leave": 12,
-        "start": "12-12-2023",
-        "finish":"13-12-2023",
-        "reason": "Sakit",
-        "status": 0
+      "id": 3,
+      "name": "haris",
+      "leave": 12,
+      "start": "12-12-2023",
+      "finish": "13-12-2023",
+      "reason": "Sakit",
+      "status": 0
     },
     {
-        "id": 4,
-        "name" : "haris",
-        "leave": 12,
-        "start": "12-12-2023",
-        "finish":"13-12-2023",
-        "reason": "Sakit",
-        "status": 0
+      "id": 4,
+      "name": "haris",
+      "leave": 12,
+      "start": "12-12-2023",
+      "finish": "13-12-2023",
+      "reason": "Sakit",
+      "status": 0
     }
   ],
   "department": [
     {
       "id": 1,
-      "departmentId": 1,
       "departmentName": "CEO"
     },
     {
       "id": 2,
-      "departmentId": 2,
       "departmentName": "Bussiness Development"
     },
     {
       "id": 3,
-      "departmentId": 3,
       "departmentName": "IT Staff"
     },
     {
       "id": 4,
-      "departmentId": 4,
       "departmentName": "Accounting & Tax Suuperintendent"
     },
     {
       "id": 5,
-      "departmentId": 5,
       "departmentName": "Human Resource Superintendent"
     },
     {
       "id": 6,
-      "departmentId": 6,
       "departmentName": "Admin Site HSE / PR"
     },
     {
       "id": 7,
-      "departmentId": 7,
       "departmentName": "Legal Contract"
     },
     {
       "id": 8,
-      "departmentId": 8,
       "departmentName": "Public Relationship"
     },
     {
       "id": 9,
-      "departmentId": 9,
       "departmentName": "Logistic Site Officer"
     },
     {
       "id": 10,
-      "departmentId": 10,
       "departmentName": "Finance Officer"
     },
     {
       "id": 11,
-      "departmentId": 11,
       "departmentName": "Engineering Department"
     },
     {
       "id": 12,
-      "departmentId": 12,
       "departmentName": "Geology Department"
     },
     {
       "id": 13,
-      "departmentId": 13,
       "departmentName": "Mining Department"
     },
     {
       "id": 14,
-      "departmentId": 14,
       "departmentName": "Project Coordinator"
     },
     {
       "id": 15,
-      "departmentId": 15,
       "departmentName": "Engineering Officer"
     },
     {
       "id": 16,
-      "departmentId": 16,
       "departmentName": "Marketing"
     },
     {
       "id": 17,
-      "departmentId": 17,
       "departmentName": "CO / IN Trading Superintendent"
     }
   ],
@@ -461,21 +441,18 @@
       "workingStatusId": 4
     }
   ],
-  "pointOfHireArea": [
+  "poharea": [
     {
       "id": 1,
-      "areaName": "Tenaga Kerja Lokal",
-      "pointOfHireAreaId": 1
+      "areaName": "Tenaga Kerja Lokal"
     },
     {
       "id": 2,
-      "areaName": "Tenaga Kerja Regional",
-      "pointOfHireAreaId": 2
+      "areaName": "Tenaga Kerja Regional"
     },
     {
       "id": 3,
-      "areaName": "Tenaga Kerja Nasional",
-      "pointOfHireAreaId": 3
+      "areaName": "Tenaga Kerja Nasional"
     }
   ],
   "religions": [
@@ -522,7 +499,7 @@
       "genderId": 2
     }
   ],
-  "mariageStatus": [
+  "mariagestatus": [
     {
       "id": 1,
       "status": "Single",
@@ -556,45 +533,38 @@
       "educationId": 1
     },
     {
-      "id": 1,
+      "id": 2,
       "level": "Sarjana (S2)",
-      "educationId": 1
+      "educationId": 2
+    },
+    {
+      "id": 3,
+      "level": "Sarjana (S1)"
     },
     {
       "id": 1,
-      "level": "Sarjana (S1)",
-      "educationId": 1
+      "level": "D1/D2/D3"
     },
     {
       "id": 1,
-      "level": "D1/D2/D3",
-      "educationId": 1
+      "level": "SMA/SMK"
     },
     {
       "id": 1,
-      "level": "SMA/SMK",
-      "educationId": 1
+      "level": "SMP"
     },
     {
       "id": 1,
-      "level": "SMP",
-      "educationId": 1
-    },
-    {
-      "id": 1,
-      "level": "SD",
-      "educationId": 1
+      "level": "SD"
     }
   ],
   "position": [
     {
-      "id":1,
-      "positionId": 1,
+      "id": 1,
       "positionName": "Manager"
     },
     {
-      "id":2,
-      "positionId": 2,
+      "id": 2,
       "positionName": "Staf"
     }
   ]
