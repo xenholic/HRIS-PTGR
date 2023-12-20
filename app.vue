@@ -1,27 +1,26 @@
 <script setup>
 import { onMounted } from 'vue'
-import { initFlowbite } from 'flowbite'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import { initFlowbite, initModals } from 'flowbite'
 import '../HRIS-PTGR/assets/css/style.css'
-import '../HRIS-PTGR/assets/css/bootstrap.min.css'
 import '../HRIS-PTGR/assets/css/main.css'
 
 // initialize components based on data attribute selectors
 onMounted(() => {
     initFlowbite();
+    initModals();
 })
 </script>
 
 <template>
   <div>
     <NuxtLayout>
-      <NuxtPage/>
-      <Router-view />
+      <!-- <Router-view> -->
+        <NuxtPage/>
+      <!-- </Router-view> -->
     </NuxtLayout>
   </div>
 </template>
 
-<style scoped>
+<style>
 
 </style>

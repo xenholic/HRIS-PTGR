@@ -59,16 +59,16 @@
 </template>
 
 <script>
-import { useCounterStore } from "../stores/index.js";
+import { useStore } from "../stores/index.js";
 import { mapActions, mapState } from "pinia";
 
 export default{
   name: "userLogin",
   computed: {
-    ...mapState(useCounterStore, ["LoginForm"]),
+    ...mapState(useStore, ["LoginForm"]),
   },
   methods: {
-    ...mapActions(useCounterStore, ["Login"]),
+    ...mapActions(useStore, ["Login"]),
     async loginHandler() {
       try {
         this.Login();

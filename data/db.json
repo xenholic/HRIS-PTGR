@@ -63,13 +63,14 @@
       "address": "cipondoh - tangerang",
       "email": "rizalhari@yahoo.co.id",
       "salary": "Rp. 10.000.000",
-      "status": "Active",
+      "status": "active",
       "profilePic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Gibran_Rakabuming_Raka%2C_Candidate_for_Vice_President_of_Indonesia_2024.jpg/1200px-Gibran_Rakabuming_Raka%2C_Candidate_for_Vice_President_of_Indonesia_2024.jpg",
       "positionId": 1,
       "companyId": 1,
       "departmentId": 1,
       "fieldId": 2,
       "religion": 1,
+      "startDateWorking": "01-01-2020",
       "personalData": {
         "dateOfBirth": "1990-01-01",
         "placeOfBirth": "Tangerang",
@@ -112,17 +113,18 @@
     },
     {
       "id": 2,
-      "name": "Haris",
+      "name": "Febriyantino",
       "address": "cipondoh - tangerang",
       "email": "rizalhari@yahoo.co.id",
       "salary": "Rp. 10.000.000",
-      "status": "Active",
+      "status": "active",
       "profilePic": "https://upload.wikimedia.org/wikipedia/commons/8/80/Kaesang_Madhang.jpg",
       "positionId": 1,
       "companyId": 1,
-      "departmentId": 1,
+      "departmentId": 2,
       "fieldId": 2,
       "religion": 1,
+      "startDateWorking": "01-01-2020",
       "personalData": {
         "dateOfBirth": "1990-01-01",
         "placeOfBirth": "Tangerang",
@@ -165,17 +167,18 @@
     },
     {
       "id": 3,
-      "name": "rizal",
+      "name": "Asri",
       "address": "cipondoh - tangerang",
       "email": "rizalhari@yahoo.co.id",
       "salary": "Rp. 10.000.000",
-      "status": "Active",
+      "status": "active",
       "profilePic": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Prabowo_Subianto%2C_Candidate_for_Indonesia%27s_President_in_2024.jpg/1200px-Prabowo_Subianto%2C_Candidate_for_Indonesia%27s_President_in_2024.jpg",
       "positionId": 1,
       "companyId": 1,
       "departmentId": 1,
-      "fieldId": 2,
+      "fieldId": 1,
       "religion": 1,
+      "startDateWorking": "01-01-2020",
       "personalData": {
         "dateOfBirth": "1990-01-01",
         "placeOfBirth": "Tangerang",
@@ -222,13 +225,14 @@
       "address": "cipondoh - tangerang",
       "email": "rizalhari@yahoo.co.id",
       "salary": "Rp. 10.000.000",
-      "status": "Active",
+      "status": "leaves",
       "profilePic": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.presidenri.go.id%2Fpresiden-joko-widodo%2F&psig=AOvVaw2N-OsV_4txNQJ6nWYRwKgS&ust=1702453018722000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIiXuu-xiYMDFQAAAAAdAAAAABAD",
       "positionId": 1,
       "companyId": 1,
-      "departmentId": 1,
-      "fieldId": 2,
+      "departmentId": 4,
+      "fieldId": 1,
       "religion": 1,
+      "startDateWorking": "01-01-2020",
       "personalData": {
         "dateOfBirth": "1990-01-01",
         "placeOfBirth": "Tangerang",
@@ -270,53 +274,159 @@
       }
     }
   ],
-  "Department": [
+  "leaves": [
+    {
+        "id": 1,
+        "name" : "haris",
+        "leave": 12,
+        "start": "12-12-2023",
+        "finish":"13-12-2023",
+        "reason": "Sakit",
+        "status": 0
+    },
+    {
+        "id": 2,
+        "name" : "haris",
+        "leave": 12,
+        "start": "12-12-2023",
+        "finish":"13-12-2023",
+        "reason": "Sakit",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "name" : "haris",
+        "leave": 12,
+        "start": "12-12-2023",
+        "finish":"13-12-2023",
+        "reason": "Sakit",
+        "status": 0
+    },
+    {
+        "id": 4,
+        "name" : "haris",
+        "leave": 12,
+        "start": "12-12-2023",
+        "finish":"13-12-2023",
+        "reason": "Sakit",
+        "status": 0
+    }
+  ],
+  "department": [
     {
       "id": 1,
       "departmentId": 1,
-      "departmentName": "HRD"
+      "departmentName": "CEO"
     },
     {
       "id": 2,
       "departmentId": 2,
-      "departmentName": "Manager"
+      "departmentName": "Bussiness Development"
     },
     {
       "id": 3,
       "departmentId": 3,
-      "departmentName": "IT"
+      "departmentName": "IT Staff"
     },
     {
       "id": 4,
       "departmentId": 4,
-      "departmentName": "Staff"
+      "departmentName": "Accounting & Tax Suuperintendent"
     },
     {
       "id": 5,
       "departmentId": 5,
-      "departmentName": "Engginering"
+      "departmentName": "Human Resource Superintendent"
     },
     {
       "id": 6,
       "departmentId": 6,
-      "departmentName": "Drilling"
+      "departmentName": "Admin Site HSE / PR"
     },
     {
       "id": 7,
       "departmentId": 7,
-      "departmentName": "HSE"
+      "departmentName": "Legal Contract"
     },
     {
       "id": 8,
       "departmentId": 8,
-      "departmentName": "Admin/Logistik"
+      "departmentName": "Public Relationship"
+    },
+    {
+      "id": 9,
+      "departmentId": 9,
+      "departmentName": "Logistic Site Officer"
+    },
+    {
+      "id": 10,
+      "departmentId": 10,
+      "departmentName": "Finance Officer"
+    },
+    {
+      "id": 11,
+      "departmentId": 11,
+      "departmentName": "Engineering Department"
+    },
+    {
+      "id": 12,
+      "departmentId": 12,
+      "departmentName": "Geology Department"
+    },
+    {
+      "id": 13,
+      "departmentId": 13,
+      "departmentName": "Mining Department"
+    },
+    {
+      "id": 14,
+      "departmentId": 14,
+      "departmentName": "Project Coordinator"
+    },
+    {
+      "id": 15,
+      "departmentId": 15,
+      "departmentName": "Engineering Officer"
+    },
+    {
+      "id": 16,
+      "departmentId": 16,
+      "departmentName": "Marketing"
+    },
+    {
+      "id": 17,
+      "departmentId": 17,
+      "departmentName": "CO / IN Trading Superintendent"
     }
   ],
   "fields": [
     {
       "id": 1,
       "fieldName": "On Site Field",
-      "fieldId": 1
+      "fieldId": 1,
+      "roosterLevel": [
+        {
+          "id": 1,
+          "level": "Rooster Kru",
+          "remainingDays": 84,
+          "remainingLeaves": 14,
+          "leavesSchema": "12:2"
+        },
+        {
+          "id": 2,
+          "level": "Rooster Supervisor",
+          "remainingDays": 70,
+          "remainingLeaves": 14,
+          "leavesSchema": "10:2"
+        },
+        {
+          "id": 3,
+          "level": "Rooster Manager",
+          "remainingDays": 56,
+          "remainingLeaves": 14,
+          "leavesSchema": "8:2"
+        }
+      ]
     },
     {
       "id": 2,
@@ -476,19 +586,16 @@
       "educationId": 1
     }
   ],
-  "totalData": [
+  "position": [
     {
-      "id": 1,
-      "ammountEmployees": 156
+      "id":1,
+      "positionId": 1,
+      "positionName": "Manager"
     },
     {
-      "ammountCompanies": 5
-    },
-    {
-      "leavesAmmount": 10
-    },
-    {
-      "ammountSalary": "Rp. 100.000 B"
+      "id":2,
+      "positionId": 2,
+      "positionName": "Staf"
     }
   ]
 }

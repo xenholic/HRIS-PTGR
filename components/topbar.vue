@@ -2,7 +2,7 @@
   <div class="">
     <div class="header">
       <div class="header-left">
-        <a href="index.html" class="logo">
+        <a href="/" class="logo">
           <img src="assets/img/logo.png" alt="Logo">
         </a>
         <a href="index.html" class="logo logo-small">
@@ -14,18 +14,18 @@
         </a>
       </div>
 
-      <div class="top-nav-search">
+      <!-- <div class="top-nav-search">
         <form>
           <input type="text" class="form-control" placeholder="">
           <button class="btn" type="submit"><i class="fas fa-search"></i></button>
         </form>
-      </div>
+      </div> -->
 
-      <div class="gap-2">
+      <div class="nav user-menu">
         <button id="dropdownNotificationButton" data-dropdown-toggle="dropdownNotification"
           class="relative inline-flex items-center text-sm font-medium text-center text-gray-500 mr-4 hover:text-gray-900 focus:outline-none dark:hover:text-white dark:text-gray-400"
           type="button">
-          <svg class="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+          <svg class="w-16 h-16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
             viewBox="0 0 14 20">
             <path
               d="M12.133 10.632v-1.8A5.406 5.406 0 0 0 7.979 3.57.946.946 0 0 0 8 3.464V1.1a1 1 0 0 0-2 0v2.364a.946.946 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C1.867 13.018 0 13.614 0 14.807 0 15.4 0 16 .538 16h12.924C14 16 14 15.4 14 14.807c0-1.193-1.867-1.789-1.867-4.175ZM3.823 17a3.453 3.453 0 0 0 6.354 0H3.823Z" />
@@ -180,12 +180,12 @@
         </div>
       </div>
       <!-- profile picture  -->
-      <div>
+      <div class="nav user-menu">
         <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
           class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
           type="button">
           <span class="sr-only">Open user menu</span>
-          <img class="w-8 h-8 rounded-full" src="../assets/img/avatar.png" alt="user photo" />
+          <img class="w-16 h-16 rounded-full" src="../assets/img/avatar.png" alt="user photo" />
         </button>
 
         <!-- Dropdown menu -->
